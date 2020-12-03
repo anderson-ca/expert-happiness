@@ -5,9 +5,21 @@ const Nav = () => {
   return (
     <div id="nav-container">
       <ul>
-        <li className="nav-item">Home</li>
-        <li className="nav-item">Content</li>
-        <li className="nav-item">About</li>
+        <li>
+          <Link className="nav-item" to="/">
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link className="nav-item" to="/flags">
+            Content
+          </Link>
+        </li>
+        <li>
+          <Link className="nav-item" to="/about">
+            About
+          </Link>
+        </li>
       </ul>
     </div>
   );
